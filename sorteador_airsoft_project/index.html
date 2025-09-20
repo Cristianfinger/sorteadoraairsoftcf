@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sorteador de Times - Airsoft</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Sorteador de Times - Airsoft</h1>
+
+    <section class="player-input">
+      <h2>Adicionar Jogador</h2>
+      <input id="playerName" placeholder="Nome do jogador" />
+      <select id="playerClass">
+        <option value="Asalto">Asalto</option>
+        <option value="DMR">DMR</option>
+        <option value="Sniper">Sniper</option>
+        <option value="Suporte">Suporte</option>
+        <option value="Medico">Médico</option>
+      </select>
+      <button id="addPlayerBtn">Adicionar</button>
+
+      <h3>Jogadores</h3>
+      <ul id="playersList"></ul>
+    </section>
+
+    <section class="game-options">
+      <h2>Opções do Jogo</h2>
+      <label for="gameMode">Modo de jogo</label>
+      <select id="gameMode">
+        <option value="bomba">Jogo modo bomba</option>
+        <option value="mata-mata">Jogo modo mata-mata</option>
+        <option value="captura">Jogo captura bandeira</option>
+      </select>
+
+      <label for="gameTime">Tempo</label>
+      <select id="gameTime">
+        <option value="5">5 minutos</option>
+        <option value="15">15 minutos</option>
+        <option value="30">30 minutos</option>
+      </select>
+
+      <button id="shuffleBtn">Sortear Times</button>
+    </section>
+
+    <section class="results">
+      <h2>Resultado</h2>
+      <div class="teams">
+        <div class="team" id="teamA">
+          <h3 id="teamAName">Time A</h3>
+          <ul class="team-list" id="teamAList"></ul>
+        </div>
+        <div class="team" id="teamB">
+          <h3 id="teamBName">Time B</h3>
+          <ul class="team-list" id="teamBList"></ul>
+        </div>
+      </div>
+
+      <button id="startGameBtn" disabled>Iniciar Jogo</button>
+      <div id="countdown" class="countdown"></div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
