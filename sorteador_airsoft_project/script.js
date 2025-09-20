@@ -41,7 +41,7 @@ function shuffleArray(a){
 }
 
 function generateTeamNames() {
-  const names = ['ALFA', 'BETA', 'BRAVO', 'CHARLE', 'HOME', 'TANGO'];
+  const names = ['ALFA', 'BETA', 'BRAVO', 'CHARLE', 'HOME', 'TANGO']; 
   
   
   const pickRandom = () => names[Math.floor(Math.random() * names.length)];
